@@ -1,0 +1,18 @@
+const int puerta1Pin = 2; 
+const int puerta2Pin = 3;
+const int puerta3Pin = 4;
+const int puerta4Pin = 5;
+
+// Define el pin al que está conectado el LED (iluminación interior)
+const int ledPin = 13; // Cambia este valor según la conexión real
+
+void setup() {
+  // Configura los pines de las puertas como entradas
+  pinMode(puerta1Pin, INPUT);
+  pinMode(puerta2Pin, INPUT);
+  pinMode(puerta3Pin, INPUT);
+  pinMode(puerta4Pin, INPUT);
+
+  // Configura el pin del LED como salida
+  pinMode(ledPin, OUTPUT);
+

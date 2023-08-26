@@ -1,0 +1,14 @@
+from machine import Pin
+from utime import sleep
+
+boton1= Pin(13,Pin.IN)
+boton2=Pin(32,Pin.IN)
+boton3=Pin(35,Pin.IN)
+boton4=Pin(34,Pin.IN)
+led1=Pin(33,Pin.OUT)
+print("Hello, ESP32!")
+while True:
+  x = (boton1.value() and boton2.value () and boton3.value() and boton4.value())
+  led1.value(x)
+  #led1.value(boton1.value())
+  print(x)
